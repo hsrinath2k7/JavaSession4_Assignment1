@@ -1,0 +1,42 @@
+// Print Reverse of Array
+
+import java.util.Scanner;
+
+public class ReverseArray {
+	
+	
+	static int n;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.print("Enter a value to print in reverse sequence: ");
+		
+		// Get input from user for array location
+		Scanner arrsc = new Scanner(System.in);
+		
+		n = arrsc.nextInt();
+		
+		//Declaring the array object and initializing by assigning the variable
+		int [] arry = new int[n];
+		
+		
+		
+		for (int i =0  ; i<= arry.length ;i++)
+		{	 
+			int j = arry.length - i;
+			
+					System.out.print(j + " ");
+		}
+
+	}
+
+}
+
+
+/* Output
+Enter a value to print in reverse sequence: 5
+5 4 3 2 1 0 
+
+
+*/
